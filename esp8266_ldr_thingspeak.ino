@@ -52,7 +52,7 @@ void setup() {
 
 void loop() {
   ldr_value = analogRead(LDR_PIN); // read input value and store it
-  Serial.println(lrd_value);
+  Serial.println(ldr_value);
   WiFiClient client;
   const int httpPort = 80;
   if (!client.connect(host, httpPort)) {
